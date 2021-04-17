@@ -18,9 +18,9 @@ react
 
 python manage.py run
 
-after cd/frontend/
+cd/frontend/
 
-and npm start
+npm start
 
 open in terminal http://localhost:3000/
 
