@@ -11,26 +11,16 @@ def ArrayView(a):
     try:
 
         a = json.loads(a.body)
-
         print("array loaded", a)
-
         a = a["content"]
-
         a = a[1:-1]
-
         c = []
 
         for n in a:
-
             if n != ',' and n != " ":
                 c.append(int(n))
 
-
-
-
-
-        var_len = len(c)
-        mid_var = int(var_len / 2)
+        mid_var = int(len(c) / 2)
         first_sum = 0
         second_sum = 0
         rest = c[-1]
