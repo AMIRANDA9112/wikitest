@@ -12,7 +12,7 @@ def ArrayView(a):
 
         a = json.loads(a.body)
 
-        print(a)
+        print("array loaded", a)
 
         a = a["content"]
 
@@ -24,18 +24,15 @@ def ArrayView(a):
 
             if n != ',' and n != " ":
                 c.append(int(n))
-                print(c)
 
 
-        print(c)
+
+
 
         var_len = len(c)
         mid_var = int(var_len / 2)
-
         first_sum = 0
         second_sum = 0
-
-        print(c)
         rest = c[-1]
 
         second_mid_sum = []
@@ -60,7 +57,7 @@ def ArrayView(a):
                 results.append(first_sum)
 
         index = str(results[0])
-        print(index)
+        print("index encode from array is", index)
 
         return Response(status=status.HTTP_200_OK, data={"data": index})
     except ValueError as e:
