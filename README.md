@@ -1,15 +1,14 @@
 # challengekiwi
 test 
 
-Hi, to the task 1 algorithm review you can open and run the task1.py in root directory.
+Task 1 algorithm review you can open and run the task1.py in root directory.
 
 
-i sorry to late but i can resolve a bug in the react component frontend that crash when
-receive the index result from django api, but django api is complete, the endpoint
+The endpoint
 http://localhost/8000/array receive a json {'content' : '[]'} and return {'data': 'indice'}
 
 
-to test
+to test Task 2
 
 # requirements
 django>=3.1.7
