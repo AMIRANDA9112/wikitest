@@ -29,9 +29,10 @@ def ArrayView(a):
 
                 try:
                     c.append(int(n))
-                    print(c)
+
 
                 except:
+                    print("This array no have key")
                     return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
 
             last_number = n
