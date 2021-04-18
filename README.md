@@ -5,7 +5,7 @@ Task 1 algorithm review you can open and run the task1.py in root directory.
 
 
 The endpoint
-http://localhost/8000/array receive a json {'content' : '[]'} and return {'data': 'indice'}
+http://localhost/8000/array receive a json {'content' : '[list]'} and return {'data': 'indice'}
 
 
 to test Task 2
