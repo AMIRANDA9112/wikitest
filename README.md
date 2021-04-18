@@ -7,6 +7,12 @@ To algorithm review you can open and run the task1.py in root directory.
 python task1.py
 
 
+performance O(NC)
+
+where N is array len and C is distance from init of first mid part sum list to Index in left to right direction.
+
+
+
 Task 2
 
 
