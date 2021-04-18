@@ -2,9 +2,10 @@
 
 algorithm performance
 
-O(N)
+O(NC)
 
 where N is array len
+and C is distance from init of first mid part sum list to Index in left to right direction
 
 """
 
