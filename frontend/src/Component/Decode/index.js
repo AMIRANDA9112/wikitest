@@ -26,7 +26,8 @@ export default class Decode extends Component {
 
         fetch('http://localhost:8000/array/', {
             method : 'POST',
-            body : JSON.stringify( {
+            body : JSON.stringify(
+                {
                 content : arreglo
             }),
             headers: {
@@ -44,7 +45,7 @@ export default class Decode extends Component {
         return (
           <form onSubmit={this.onSubmit}>
 
-            <p>Thi is the Indice Array {indice}</p>
+            <p>Thi is the Indice Array {indice.data}</p>
             <input
               type="text"
               name="arreglo"

@@ -13,7 +13,6 @@ def ArrayView(a):
         a = json.loads(a.body)
         print("array loaded", a)
         a = a["content"]
-        a = a[1:-1]
         c = []
 
         for n in a:
@@ -46,9 +45,15 @@ def ArrayView(a):
             if first_sum in second_mid_rest and p_position > 0:
                 results.append(first_sum)
 
-        index = str(results[0])
-        print("index encode from array is", index)
+        if results:
 
-        return Response(status=status.HTTP_200_OK, data={"data": index})
+            index = str(results[0])
+            print("index encode from array is", index)
+
+            return Response(status=status.HTTP_200_OK, data={"data": index})
+
+        else:
+            return esponse(status=status.HTTP_200_OK, data={"data": "This array no have key"})
+
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
