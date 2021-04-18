@@ -14,14 +14,27 @@ def ArrayView(a):
         print("array loaded", a)
         a = a["content"]
         c = []
+        last_number = "0"
 
         for n in a:
+
             if n != ',' and n != " ":
+
+                try :
+                    int(last_number)
+                    n = last_number + n
+
+                except:
+                    pass
+
                 try:
                     c.append(int(n))
+                    print(c)
 
                 except:
                     return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
+
+            last_number = n
 
         mid_var = int(len(c) / 2)
         first_sum = 0
