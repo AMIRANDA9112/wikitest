@@ -53,7 +53,7 @@ def ArrayView(a):
             return Response(status=status.HTTP_200_OK, data={"data": index})
 
         else:
-            return esponse(status=status.HTTP_200_OK, data={"data": "This array no have key"})
+            return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
 
     except ValueError as e:
         return Response(e.args[0], status.HTTP_400_BAD_REQUEST)

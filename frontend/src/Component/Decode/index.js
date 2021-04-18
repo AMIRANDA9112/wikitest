@@ -45,7 +45,18 @@ export default class Decode extends Component {
         return (
           <form onSubmit={this.onSubmit}>
 
-            <p>Thi is the Indice Array {indice.data}</p>
+              <h2>Indice Decode</h2>
+
+              <p>If the acumulated number of array first mid part  consecutive sums list in left</p>
+                  <p>to rigth direction have a number that match with other in array second</p>
+              <p>mid part sums list in rigth to left direction, or at array second mid  part rest list</p>
+              <p>or to last number of list. If you have multiple numbers that coincide the index is the min number</p>
+
+
+              <h2>You can write a numbers group y form,
+                  they can be separated by spaces or quotes or nothing</h2>
+
+            <h1>Decode Indice Array {indice.data}</h1>
             <input
               type="text"
               name="arreglo"
