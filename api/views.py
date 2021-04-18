@@ -16,7 +16,6 @@ def ArrayView(a):
 
         b = list(a.split(","))
 
-
         c = []
 
         for i in b:

@@ -45,7 +45,7 @@ export default class Decode extends Component {
         return (
           <form onSubmit={this.onSubmit}>
 
-              <h1>Indice Decode</h1>
+              <h1>Index Decode</h1>
 
               <p>If the acumulated number of array first mid part  consecutive sums list in left</p>
                   <p>to rigth direction have a number that match with other in array second</p>
