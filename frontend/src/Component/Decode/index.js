@@ -56,7 +56,7 @@ export default class Decode extends Component {
               <h2>You can write a numbers group y form,
                   they can be separated by spaces or quotes or nothing</h2>
 
-            <h1>Decode Indice Array {indice.data}</h1>
+            <h1>Decode Index Array is: {indice.data}</h1>
             <input
               type="text"
               name="arreglo"

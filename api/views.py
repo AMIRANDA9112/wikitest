@@ -17,7 +17,11 @@ def ArrayView(a):
 
         for n in a:
             if n != ',' and n != " ":
-                c.append(int(n))
+                try:
+                    c.append(int(n))
+
+                except:
+                    return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
 
         mid_var = int(len(c) / 2)
         first_sum = 0
