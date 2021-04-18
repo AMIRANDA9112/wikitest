@@ -53,8 +53,8 @@ export default class Decode extends Component {
               <p>or to last number of list. If you have multiple numbers that coincide the index is the min number</p>
 
 
-              <h2>You can write a numbers group y form,
-                  they can be separated by spaces or quotes</h2>
+              <h2>You can write a number list or array
+                  they only can separate by quotes</h2>
 
             <h1>Decode Index Array is: {indice.data}</h1>
             <input

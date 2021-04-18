@@ -13,29 +13,14 @@ def ArrayView(a):
         a = json.loads(a.body)
         print("array loaded", a)
         a = a["content"]
+
+        b = list(a.split(","))
+
+
         c = []
-        last_number = "0"
 
-        for n in a:
-
-            if n != ',' and n != " ":
-
-                try :
-                    int(last_number)
-                    n = last_number + n
-
-                except:
-                    pass
-
-                try:
-                    c.append(int(n))
-
-
-                except:
-                    print("This array no have key")
-                    return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
-
-            last_number = n
+        for i in b:
+            c.append(int(i))
 
         mid_var = int(len(c) / 2)
         first_sum = 0
@@ -74,4 +59,4 @@ def ArrayView(a):
             return Response(status=status.HTTP_200_OK, data={"data": "This array no have key"})
 
     except ValueError as e:
-        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
+        return Response(status=status.HTTP_200_OK, data={"data": "This no number array or number list"})
