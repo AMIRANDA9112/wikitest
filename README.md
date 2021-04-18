@@ -17,7 +17,7 @@ Task 2
 
 
 The endpoint
-http://localhost/8000/array receive a json {'content' : '[numberlist]'} and return {'data': 'indice'}
+http://localhost:8000/array receive a json {'content' : '[numberlist]'} and return {'data': 'indice'}
 
 
 
