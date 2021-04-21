@@ -24,6 +24,9 @@ http://localhost:8000/array receive a json {'content' : '[numberlist]'} and retu
 # requirements
 django>=3.1.7
 djangorestframework>=3.12.4
+
+also need npm js package:
+
 nodejs
 react
 
