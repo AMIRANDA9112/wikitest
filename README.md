@@ -37,6 +37,8 @@ python manage.py run
 
 cd/frontend/
 
+npm install
+
 npm start
 
 open in terminal http://localhost:3000/
