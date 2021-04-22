@@ -54,7 +54,7 @@ export default class Decode extends Component {
 
 
               <h2>You can write a number list or array
-                  they only can separate by comma</h2>
+                  and this only can separate by comma</h2>
 
             <h1>Decode Index Array is: {indice.data}</h1>
             <input
